@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div.content {
+            border: 1px solid black;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background: #D3D3D3;
+        }
+
+        p {
+            margin: 0; 
+	}
+
+        .link-container {
+            display: flex;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 2px;
+            margin: 0 5px; 
+        }
+
+        .link-container a:first-child {
+            margin-left: 0; 
+        }
+
+        .vertical-line {
+            border-left: 1px solid black; 
+            height: 1em; 
+            margin: 0 5px; 
+        }
+
+        .vertical-line:first-child {
+            margin-left: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>Click any of the following links</p><br>
+        <div class="link-container">
+            <a href="https://www.ethnus.com" target="_blank"><u>Opens in New</u></a>
+            <div class="vertical-line"></div>
+            <a href="https://www.ethnus.com" target="_self"><u>Opens in Self</u></a>
+            <div class="vertical-line"></div>
+            <a href="https://www.ethnus.com" target="_self"><u>Opens in Parent</u></a>
+	  <div class="vertical-line"></div>
+            <a href="https://www.ethnus.com" target="_self"><u>Opens in Body</u></a>
+            <div class="vertical-line"></div>
+            <a href="mailto:your@example.com" target="_self"><u>Send email</u></a>
+        </div>
+    </div>
+</body>
+</html>
